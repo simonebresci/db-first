@@ -1,0 +1,15 @@
+KEY                         |TYPE        |INIT                    |ATTRIBUTE
+--------------------------------------------------------------------------------
+ID           PK              BIGINT                               AUTO_INCREMENT
+modello                      VARCHAR      NOTNULL
+marca                        VARCHAR      NOTNULL
+categoria                    VARCHAR      NOTNULL
+cilindrata                   SMALLINT     NOTNULL
+potenza                      SMALLINT     NULL
+peso                         SMALLINT     NULL
+colore                       VARCHAR      NULL
+dataImmatricolazione         DATE         NOTNULL
+optional                     TEXT         DEFAULT "Volante"
+targa                        VARCHAR(7)   NOTNULL                  UNIQUE
+carburante                   VARCHAR      NULL
+prezzo                       FLOAT(7,2)   NOTNULL
